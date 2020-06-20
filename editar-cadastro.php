@@ -7,7 +7,7 @@
 if(isset($_GET['idUsuario'])) {
   $idUsuario = $_GET['idUsuario'];
   $dados = verificarID($conexao, $idUsuario);
-  print_r($dados);
+//  print_r($dados);
 } else {
   echo ("ERRO:Usuário não encontrado!");
 }
@@ -36,8 +36,8 @@ if (isset($_POST['idUsuario']) && clienteBool($_POST['idUsuario'], $conexao)) {
   } else {
     echo("Cadastro não foi atualizado!");
   }
-//  header("Location:cadastro-lista.php");
-//  die();
+  header("Location:cadastro-lista.php");
+  die();
 }
 
 ?>
