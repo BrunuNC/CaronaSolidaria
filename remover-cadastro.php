@@ -1,10 +1,12 @@
-<?php include "cabecalho.php"?>
-<?php include('banco.php');?>
-<?php include('banco-cadastros.php');
+<?php require('cabecalho.php')?>
+<?php require('banco.php');?>
+<?php require('funcoes.php');
 
-$id = $_POST['id'];
-removeCadastro($conexao, $id);
-header("Location: cadastro-lista.php?removido=true");
-die();
-?>
+$idUsuario = $_POST['idUsuario'];
+if ($dados = verificarID($conexao, $idUsuario)) {
+  removeCadastro($conexao, $idUsuario);
+  header("Location:cadastro-lista.php");
+} else {
+  echo ("Cliente não foi deletado!");
+}
 

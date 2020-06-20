@@ -4,19 +4,19 @@
         <table class="table">
             <tr>
                 <td>Nome</td>
-                <td><input class="form-control" type="text" name="nome"></td>
+                <td><input class="form-control" type="text" name="nomeUsuario"></td>
             </tr>
             <tr>
                 <td>Data de Nascimento</td>
-                <td><input class="form-control" type="date" name="dataNasc"></td>
+                <td><input class="form-control" type="date" name="dataNascimento"></td>
             </tr>
             <tr>
                 <td>RG</td>
-                <td><input class="form-control" type="text" name="rg"></td>
+                <td><input class="form-control" type="text" name="RG"></td>
             </tr>
             <tr>
                 <td>CPF</td>
-                <td><input class="form-control" type="text" name="cpf"></td>
+                <td><input class="form-control" type="text" name="CPF"></td>
             </tr>
             <tr>
                 <td>Telefone</td>
@@ -34,19 +34,20 @@
                 <td>Senha</td>
                 <td><input class="form-control" type="password" name="senha"></td>
             </tr>
+          <tr>
+            <td>Data do Cadastro</td>
+            <td><input class="form-control" type="datetime-local" name="dataCadastro"></td>
+          </tr>
+          <tr>
+            <td>Cidade</td>
+            <td><input class="form-control" type="text" name="cidade"></td>
+          </tr>
             <tr>
                 <td>
                     <button class="btn btn-primary" type="submit">Cadastrar</button>
                 </td>
             </tr>
         </table>
-            <script>
-                function activeCheck() {
-
-                }
-            </script>
-
-            <input type="checkbox" name="motorista" id="moto"  > Motorista
 
     </form>
 <?php include "rodape.php"?>
